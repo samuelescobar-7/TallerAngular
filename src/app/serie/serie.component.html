@@ -1,0 +1,34 @@
+<div class="container-fluid">
+  <div class="col-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="h4">#</th>
+          <th class="h4">Name</th>
+          <th class="h4">Channel</th>
+          <th class="h4">Seasons</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let s of series">
+          <td>
+            <dd>{{s.id}}</dd>
+          </td>
+          <td>
+            <dd>{{s.name}}</dd>
+          </td>
+          <td>
+            <dd>{{s.channel}}</dd>
+          </td>
+          <td>
+            <dd>{{s.seasons}}</dd>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="h5">Promedio de Temporadas: {{ promedion.toFixed(2) }}</p>
+  </div>
+</div>
+
+
+
